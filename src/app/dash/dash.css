@@ -1,0 +1,56 @@
+.inum
+{
+    display: inline-block;
+    background-color: snow;
+    margin: 12px;
+}
+.example-form {
+  width: 500px;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.header_div
+{
+text-align: center;
+    background-color: turquoise;
+}
+.ae_div
+{
+    background-color: burlywood;
+    min-height: 44px;
+    padding: 12px;
+    font-size: 21px;
+    font-family: cursive;
+   border-bottom: 1px solid grey;
+}
+
+.com_div
+{
+  background-color: lime;
+    min-height: 44px;
+    padding: 12px;
+    font-size: 21px;
+  border-bottom: 1px solid grey;
+    font-family: cursive;
+}
+.lo_div
+{
+      background-color: #ded8d0;
+        min-height: 44px;
+   border-bottom: 1px solid grey;
+    padding: 12px;
+    font-size: 15px;
+    font-family: cursive;
+    
+}
+.main_div
+{
+     border: 2px solid lightslategray;
+    width: 98%;
+    
+    background-color: snow; 
+}
+
+  

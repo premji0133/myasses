@@ -1,0 +1,246 @@
+
+<h3>   Time remaining in second : {{600-ticks}} </h3>
+
+
+<div class="mydiv" *ngIf="qes==1">
+
+
+  <h1> 1. ഒരു കസ്റ്റമറെ വിസിറ്റ് ചെയ്യാന്‍ പറ്റിയ സമയം എപ്പോഴാണ്.   </h1>
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[0]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons0" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[0]}}</div>
+                                   
+ </div>  
+
+
+<div class="mydiv" *ngIf="qes==2">
+
+
+  <h1> 2. കസ്റ്റമര്‍ ദേഷ്യപ്പെടുമ്പോള്‍ നിങ്ങള്‍ എന്താണ് ചെയ്യുക .   </h1>
+
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[1]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons1" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[1]}}</div>
+                                   
+ </div>  
+
+<div class="mydiv" *ngIf="qes==3">
+
+
+  <h1> 3. താഴെ കൊടുത്തിട്ടുള്ളതില്‍ കസ്റ്റമര്‍ സര്‍വീസിനെ സംമ്മന്ദിച്ചു ശരിയായിട്ടുള്ളത് ഏതാണ് ?  </h1>
+
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[2]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons2" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[2]}}</div>
+                                   
+ </div>  
+
+<div class="mydiv" *ngIf="qes==4">
+
+  <h1> 4. മൈക്രോ വേവ് ആവൃത്തി ശ്രേണി ഇവയില്‍ ഏതാണ് </h1>
+
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[3]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons3" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[3]}}</div>
+                                   
+ </div>  
+
+ <div class="mydiv" *ngIf="qes==5">
+
+  <h1> 5. മിക്സറുകളില്‍ ഉപയോഗിക്കുന്ന യുണിവേഴ്സല്‍ മോട്ടോര്‍ ഇവയില്‍ ഏതാണ് </h1>
+
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[4]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons4" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[4]}}</div>
+                                   
+ </div>  
+
+<div class="mydiv" *ngIf="qes==6">
+ <h1> 6. മൈക്രോ വേവ് ഓവനുകളില്‍ ഇലക്ട്രിക്‌ എനെര്‍ജി മൈക്രോ വേവ് റെഡിയെഷനുകളാക്കി മാറ്റുന്നത് ഇവയില്‍ ഏതാണ്</h1>
+
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[5]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons5" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[5]}}</div>
+                                   
+ </div>  
+
+ <div class="mydiv" *ngIf="qes==7">
+ <h1> 7. KDF ഫില്‍റ്ററിന്റെ പ്രവര്‍ത്തന തത്വo</h1>
+
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[6]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons6" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[6]}}</div>
+                                   
+ </div>  
+
+
+ <div class="mydiv" *ngIf="qes==8">
+ <h1> 8. കപ്പാസിറ്റര്‍ സ്റ്റാര്‍ട്ട്‌ മോട്ടോറുകളില്‍  കപ്പാസിറ്റര്‍ ________ മായി സീരിയല്‍ കണക്ട് ചെയ്യുന്നു   </h1>
+
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[7]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons7" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[7]}}</div>
+                                   
+ </div>  
+
+ <div class="mydiv" *ngIf="qes==9">
+ <h1> 9. വളരെ ചെറിയ തോതില്‍ വെള്ളം ശുദ്ധീകരിക്കുന്നത് ?   </h1>
+
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[8]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons8" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[8]}}</div>
+                                   
+ </div>  
+
+ <div class="mydiv" *ngIf="qes==10">
+ <h1> 10. TDS റീഡിംഗ് അളക്കുന്നത്  ________ യുണിറ്റിലാണു  </h1>
+
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[9]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons9" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[9]}}</div>
+                                   
+ </div>  
+ <div class="mydiv" *ngIf="qes==11">
+ <h1> 11. CRM എന്നതു ?  </h1>
+
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[10]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons10" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[10]}}</div>
+                                   
+ </div>  
+
+
+
+ <div class="mydiv" *ngIf="qes==12">
+ <h1> 12. വര്‍ക്ക് എത്തിക്സ് ഇവയില്‍ ഏതാണ് ?  </h1>
+
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[11]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons11" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[11]}}</div>
+                                   
+ </div>  
+
+ <div class="mydiv" *ngIf="qes==13">
+ <h1> 13. ഇവയില്‍ അസന്മാര്‍ഗിഗം ആയതു എന്താണ് ? </h1>
+
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[12]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons12" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[12]}}</div>
+                                   
+ </div>  
+
+
+ <div class="mydiv" *ngIf="qes==14">
+ <h1> 14. 
+സര്‍വീസ് ചെയ്യേണ്ട സ്ഥലം നിങ്ങളുടെ കൂട്ടുകാരന്‍റെ വീടിനു അടുത്താണെങ്കില്‍ നിങ്ങള്‍ എന്ത് ചെയ്യും ? </h1>
+
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[13]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons13" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[13]}}</div>
+                                   
+ </div>  
+
+ <div class="mydiv" *ngIf="qes==15">
+ <h1> 15. 
+
+സര്‍വീസിന് ശേഷം കസ്ടമറിനെ വീണ്ടും വിളിക്കുന്നത്‌ എന്തിനു വേണ്ടിയാണ് ? </h1>
+
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[14]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons14" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[14]}}</div>
+                                   
+ </div>  
+
+
+
+
+ <div class="mydiv" *ngIf="qes==16">
+ <h1> You have sucessfully Completed the Exam click SUBMIT to Submit the answers  </h1>
+
+
+                                   
+ </div>  
+
+<div class="plane">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bottom">
+
+ <span class="prev" *ngIf="qes>1 && qes < 16">
+ <button md-raised-button (click)="prev()"><< Previous </button>
+   </span>  
+
+  <span class="next" *ngIf="qes<16">                               
+ <button md-raised-button (click)="next()">Next >></button>
+  </span>
+ <span class="submit">
+  <button md-raised-button (click)="res()"> SUBMIT EXAM </button>
+  </span>  
+   
+   <footer>Copyright &copy; prems021</footer>
+</div>
+
+

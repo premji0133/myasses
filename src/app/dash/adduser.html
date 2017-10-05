@@ -1,0 +1,18 @@
+<h3> add user </h3>
+
+<form class="example-form"[formGroup]="myForm" >
+ 
+
+  
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="Name"  formControlName="username" >   
+    </md-input-container>
+  
+  
+    <md-input-container class="example-full-width">
+      <input mdInput placeholder="Password"  formControlName="password" >   
+    </md-input-container>
+     <div class="button text-right" (click)="login()"> <button md-raised-button><md-icon>add box</md-icon>Add User</button> </div>
+
+  
+</form>
