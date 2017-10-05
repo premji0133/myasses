@@ -1,6 +1,6 @@
-
+<div class="timediv">
 <h3>   Time remaining in second : {{600-ticks}} </h3>
-
+</div>
 
 <div class="mydiv" *ngIf="qes==1">
 
@@ -228,19 +228,22 @@
 
 
 <div class="bottom">
-
+<div class="prev_i">
  <span class="prev" *ngIf="qes>1 && qes < 16">
  <button md-raised-button (click)="prev()"><< Previous </button>
    </span>  
-
+  </div>
+<div class="next_i">
   <span class="next" *ngIf="qes<16">                               
  <button md-raised-button (click)="next()">Next >></button>
   </span>
+  </div>
+  <div class="submit_i">
  <span class="submit">
   <button md-raised-button (click)="res()"> SUBMIT EXAM </button>
   </span>  
-   
-   <footer>Copyright &copy; prems021</footer>
+  </div>
+  <footer> <span class="copyr"> Copyright &copy; prems021  </span> </footer>
 </div>
 
 
