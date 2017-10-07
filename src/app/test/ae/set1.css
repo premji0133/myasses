@@ -1,3 +1,15 @@
+.timediv
+{
+      width: 100%;
+   
+    text-align: center;
+    margin-left: -1%;
+    height: 20%;
+    background-color: yellowgreen;
+
+}
+
+
 .example-radio-group {
   display: inline-flex;
   flex-direction: column;
@@ -20,6 +32,7 @@
  
     
 }
+
 
 .prev
 {
