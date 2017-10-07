@@ -1,6 +1,6 @@
 .timediv
 {
-      width: 100%;
+      width: 102%;
    
     text-align: center;
     margin-left: -1%;
@@ -11,7 +11,7 @@
 .qesdiv
 {
 background-color: wheat;
-   
+       width: 102%;
     height: 50%;
     margin-left: -1%;
 }
