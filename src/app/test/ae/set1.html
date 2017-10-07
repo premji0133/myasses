@@ -228,22 +228,24 @@
 
 
 <div class="bottom">
-<div class="prev_i">
+<mat-card>
  <span class="prev" *ngIf="qes>1 && qes < 16">
  <button md-raised-button (click)="prev()"><< Previous </button>
    </span>  
-  </div>
-<div class="next_i">
+ 
+
   <span class="next" *ngIf="qes<16">                               
  <button md-raised-button (click)="next()">Next >></button>
   </span>
-  </div>
-  <div class="submit_i">
+  
+  
  <span class="submit">
   <button md-raised-button (click)="res()"> SUBMIT EXAM </button>
   </span>  
+  
+  </mat-card>
   </div>
   <footer> <span class="copyr"> Copyright &copy; prems021  </span> </footer>
-</div>
+
 
 
