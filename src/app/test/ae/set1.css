@@ -1,12 +1,12 @@
 .timediv
 {
-      width: 102%;
-   
+    width: 102%;
     text-align: center;
     margin-left: -1%;
     height: 20%;
-    background-color: yellowgreen;
-
+    background-color: #e9efdd;
+    border: 1px solid powderblue;
+    border-radius: 8px;
 }
 .qesdiv
 {
