@@ -83,7 +83,7 @@ export class Set2Component implements OnInit {
   {
      console.log(this.favoriteSeason);
                               this.total=0;
-                           for(this.i=0;this.i<14;this.i++)
+                           for(this.i=0;this.i<15;this.i++)
                            {
 
                              console.log(this.answers[this.i]);
