@@ -16,6 +16,7 @@ export class SubmitComponent implements OnInit {
   myForm: FormGroup; 
   qs = 0;
   model = new fedd('',0,0);
+  disabled : boolea= true;
   isclicked : boolean= false;
   constructor( private router: Router,private fb: FormBuilder, private aS: AuthenticationService) {   }
   ngOnInit()  {
@@ -31,7 +32,7 @@ export class SubmitComponent implements OnInit {
    
  submit()
   {
-    
+     this.disabled = false;
      this.total=this.aS.get_total();
      this.names=this.aS.get_username();
      this.myForm.patchValue({names: this.names  });
