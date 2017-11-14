@@ -16,7 +16,7 @@ export class SubmitComponent implements OnInit {
   myForm: FormGroup; 
   qs = 0;
   model = new fedd('',0,0);
-  disabled : boolea= true;
+  disabled : boolean= true;
   isclicked : boolean= false;
   constructor( private router: Router,private fb: FormBuilder, private aS: AuthenticationService) {   }
   ngOnInit()  {
