@@ -277,7 +277,24 @@
                                    
  </div>  
 
- <div class="mydiv" *ngIf="qes==21">
+<div class="mydiv" *ngIf="qes==21">
+ <h1> 21. 
+
+നെറ്റ്‌വർക്ക് സ്വിച്ച് ഏത് ലയറിൽ ആണ്‌ പ്രവൃത്തിക്കുന്നതു 
+   ട്രാൻസ്മിഷൻ  ചാനലിൽ  സിഗ്നൽ പവർ കുറയുന്നതിനെ _______________ എന്ന് പറയുന്നു 
+  ISO/OSI ലയറിൽ ടോക്കൺ മാനേജ്‌മന്റ് ചെയ്യുന്നത്  ഏത് ലയർ ആണ് ?
+   ? </h1>
+
+<mat-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[19]">
+  <mat-radio-button class="example-radio-button" *ngFor="let season of seasons19" [value]="season">
+    {{season}}
+  </mat-radio-button>
+</mat-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[19]}}</div>
+                                   
+ </div> 
+
+ <div class="mydiv" *ngIf="qes==22">
  <h1> You have sucessfully Completed the Exam click SUBMIT to Submit the answers  </h1>
 
 
@@ -294,11 +311,11 @@
 
 <div class="bottom">
 
- <span class="prev" *ngIf="qes>1 && qes < 22">
+ <span class="prev" *ngIf="qes>1 && qes < 23">
  <button mat-raised-button (click)="prev()"><< Previous </button>
    </span>  
 
-  <span class="next" *ngIf="qes<21">                               
+  <span class="next" *ngIf="qes<22">                               
  <button mat-raised-button (click)="next()">Next >></button>
   </span>
  <span class="submit">
