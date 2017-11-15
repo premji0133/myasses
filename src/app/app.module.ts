@@ -27,21 +27,7 @@ import {
   MatProgressBarModule,  MatProgressSpinnerModule,  MatRadioModule,  MatRippleModule,  MatSelectModule,  MatSidenavModule,  MatSliderModule,
   MatSlideToggleModule,  MatSnackBarModule,  MatTabsModule,  MatToolbarModule,  MatTooltipModule,  MatSortModule,  MatPaginatorModule
 } from '@angular/material';
-@NgModule({
- exports: [
-    // CDk
-    CdkTableModule,    OverlayModule,
-    
-    // Material
-    MatAutocompleteModule,    MatButtonModule,    MatButtonToggleModule,    MatCardModule,    MatCheckboxModule,    
-   MatChipsModule,    MatDatepickerModule,    MatDialogModule,    MatExpansionModule,    MatGridListModule,    MatIconModule, 
-   MatInputModule,    MatListModule,    MatMenuModule,   MatProgressBarModule,    MatProgressSpinnerModule,    MatRadioModule,   
-   MatRippleModule,    MatSelectModule,    MatSidenavModule,    MatSlideToggleModule,    MatSliderModule,    MatSnackBarModule,
-   MatTabsModule,    MatToolbarModule,    MatTooltipModule,    
-    MatNativeDateModule,    MatSortModule,
-    MatPaginatorModule
-  ]
-})
+
 
 @NgModule({
   declarations: [
@@ -53,6 +39,14 @@ import {
    ReactiveFormsModule,
     FormsModule,
     HttpModule,
+     CdkTableModule,    OverlayModule,
+    MatAutocompleteModule,    MatButtonModule,    MatButtonToggleModule,    MatCardModule,    MatCheckboxModule,    
+   MatChipsModule,    MatDatepickerModule,    MatDialogModule,    MatExpansionModule,    MatGridListModule,    MatIconModule, 
+   MatInputModule,    MatListModule,    MatMenuModule,   MatProgressBarModule,    MatProgressSpinnerModule,    MatRadioModule,   
+   MatRippleModule,    MatSelectModule,    MatSidenavModule,    MatSlideToggleModule,    MatSliderModule,    MatSnackBarModule,
+   MatTabsModule,    MatToolbarModule,    MatTooltipModule,    
+    MatNativeDateModule,    MatSortModule,
+    MatPaginatorModule
   
     
     AppRoutingModule
