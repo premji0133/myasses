@@ -46,7 +46,7 @@ import {
    MatRippleModule,    MatSelectModule,    MatSidenavModule,    MatSlideToggleModule,    MatSliderModule,    MatSnackBarModule,
    MatTabsModule,    MatToolbarModule,    MatTooltipModule,    
     MatNativeDateModule,    MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
   
     
     AppRoutingModule
