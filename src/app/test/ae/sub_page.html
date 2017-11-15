@@ -2,7 +2,7 @@
 
  Enter your Feed back about exam.
 
- <md-card>  
+ <mat-card>  
 			 <form class="example-form"[formGroup]="myForm" >
 				<div class="form-content">
 					<div class="form-group">
@@ -20,7 +20,7 @@
          
            <button md-raised-button  [disabled]="!disabled"  (click)="submit()">Submit Review</button>
         
-        <md-progress-bar *ngIf="isclicked" mode="indeterminate" color='accent' value = 20 bufferValue = 75></md-progress-bar>
+        <mat-progress-bar *ngIf="isclicked" mode="indeterminate" color='accent' value = 20 bufferValue = 75></md-progress-bar>
      
          
          
@@ -30,4 +30,4 @@
 
 			</form>
          
-       </md-card>
+       </mat-card>
