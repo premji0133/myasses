@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   myForm: FormGroup;
   model = new User('','');
   isclicked : boolean= false;
-  constructor( private router: Router,private fb: FormBuilder,public dialog: MdDialog, private aS: AuthenticationService) {   }
+  constructor( private router: Router,private fb: FormBuilder, private aS: AuthenticationService) {   }
   ngOnInit()  {
     this.isclicked=false;
    this.myForm = this.fb.group({
