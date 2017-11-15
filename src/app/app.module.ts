@@ -53,11 +53,7 @@ import {
    ReactiveFormsModule,
     FormsModule,
     HttpModule,
-     MdAutocompleteModule, MdButtonModule,  MdButtonToggleModule,  MdCardModule,   MdCheckboxModule,   MdChipsModule,
-    MdDatepickerModule,  MdDialogModule,  MdExpansionModule,  MdGridListModule,  MdIconModule,  MdInputModule,
-  MdListModule,  MdMenuModule,  MdNativeDateModule,  MdPaginatorModule,  MdProgressBarModule,  MdProgressSpinnerModule,
-  MdRadioModule,  MdRippleModule,  MdSelectModule,  MdSidenavModule,  MdSliderModule,  MdSlideToggleModule,  MdSnackBarModule,
-  MdSortModule,  MdTableModule,  MdTabsModule,  MdToolbarModule,  MdTooltipModule,
+  
     
     AppRoutingModule
     
