@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { FormGroup, FormControl, Validators, FormBuilder }  from '@angular/forms';
 import { AuthenticationService } from '../services/login.service';
 import { User } from '../dash/usermodel';
-import {MdDialog} from '@angular/material';
+
 
 @Component({
   selector: 'app-login',
