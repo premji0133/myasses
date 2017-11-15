@@ -6,7 +6,7 @@
 <!--         	<img src="assets/images/flat-avatar.png" class="user-avatar" /> -->
 			<h1>PMKVY <small> Online Assesment </small></h1>
       
-     
+     <md-card>  
 			 <form class="example-form"[formGroup]="myForm" >
 				<div class="form-content">
 					<div class="form-group">
@@ -17,16 +17,14 @@
 					</div>
 				</div>
                   
-         <button mat-raised-button  (click)="login()">LogIN</button>
+         <button md-raised-button  (click)="login()">LogIN</button>
         
-       
+        <md-progress-bar *ngIf="isclicked" mode="indeterminate" color='accent' value = 20 bufferValue = 75></md-progress-bar>
      
 
 			</form>
          
-      
+       </md-card>
 		</div>	
 	</div>
 </div>
-
-
