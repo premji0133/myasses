@@ -14,19 +14,34 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {AuthenticationService} from'./services/login.service';
 import { SelectExam } from './test/sel_test';
 import { Set2Component } from './test/set2';
+import {CdkTableModule} from '@angular/cdk/table'
+import {OverlayModule} from '@angular/cdk/overlay';
 import 'hammerjs';
 
  
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'; 
 
 import {
-  MdAutocompleteModule, MdButtonModule,  MdButtonToggleModule,  MdCardModule,   MdCheckboxModule,   MdChipsModule,
-    MdDatepickerModule,  MdDialogModule,  MdExpansionModule,  MdGridListModule,  MdIconModule,  MdInputModule,
-  MdListModule,  MdMenuModule,  MdNativeDateModule,  MdPaginatorModule,  MdProgressBarModule,  MdProgressSpinnerModule,  MdRadioModule,
-  MdRippleModule,  MdSelectModule,  MdSidenavModule,  MdSliderModule,  MdSlideToggleModule,  MdSnackBarModule,  MdSortModule,
-  MdTableModule,  MdTabsModule,  MdToolbarModule,  MdTooltipModule,
+    MatAutocompleteModule,  MatButtonModule,  MatButtonToggleModule,  MatCardModule,  MatCheckboxModule,  MatChipsModule,  MatDatepickerModule,
+  MatDialogModule,  MatExpansionModule,  MatGridListModule,  MatIconModule,  MatInputModule,  MatListModule,  MatMenuModule,  MatNativeDateModule,
+  MatProgressBarModule,  MatProgressSpinnerModule,  MatRadioModule,  MatRippleModule,  MatSelectModule,  MatSidenavModule,  MatSliderModule,
+  MatSlideToggleModule,  MatSnackBarModule,  MatTabsModule,  MatToolbarModule,  MatTooltipModule,  MatSortModule,  MatPaginatorModule
 } from '@angular/material';
-
+@NgModule({
+ exports: [
+    // CDk
+    CdkTableModule,    OverlayModule,
+    
+    // Material
+    MatAutocompleteModule,    MatButtonModule,    MatButtonToggleModule,    MatCardModule,    MatCheckboxModule,    
+   MatChipsModule,    MatDatepickerModule,    MatDialogModule,    MatExpansionModule,    MatGridListModule,    MatIconModule, 
+   MatInputModule,    MatListModule,    MatMenuModule,   MatProgressBarModule,    MatProgressSpinnerModule,    MatRadioModule,   
+   MatRippleModule,    MatSelectModule,    MatSidenavModule,    MatSlideToggleModule,    MatSliderModule,    MatSnackBarModule,
+   MatTabsModule,    MatToolbarModule,    MatTooltipModule,    
+    MatNativeDateModule,    MatSortModule,
+    MatPaginatorModule
+  ]
+})
 
 @NgModule({
   declarations: [
