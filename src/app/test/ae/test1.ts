@@ -45,6 +45,11 @@ export class AeSet1Component implements OnInit {
   
    seasons14 = ['കൂടുതല്‍ പണം ആവശ്യപ്പെടാന്‍','മറന്നുപോയ ടൂള്‍സ് തിരികെ ലഭിക്കാന്‍','പുതിയ ഉല്പന്നം പരിചയപ്പെടുത്താന്‍',
                 'വാറണ്ടി കാര്‍ഡ്‌ തിരിച്ചു വാങ്ങിക്കാന്‍'];
+   seasons15 = ['സർവീസ് ബില്ല്','വാറണ്ടി','പ്രോഡക്റ്റ് മാന്വൽ','പ്രോഡക്റ്റ് അഡ്വെർടൈസ്‌മെന്റ്'];
+   seasons16 = ['കസ്റ്റമറുടെ പേര്','ഫോൺ കോളിന്റെ ദൈർഘ്യ൦','കസ്റ്റമറുടെ ഫോൺ നമ്പർ',
+                'ഫോൺ കാൾ വന്ന സമയം'];
+   seasons17 = ['സംഘടനാ  മാനദണ്ഡങ്ങൾ','സംഘടയലുള്ള ആചാരങ്ങളും ചടങ്ങുകളും','പൊതുവായ ഭാഷ   ഉപയോഗിക്കുന്നത്',
+                'ഇവയെല്ലാം'];
   
   constructor( private router: Router, private As: AuthenticationService) {   }
   ngOnInit()  {
@@ -85,7 +90,7 @@ export class AeSet1Component implements OnInit {
   {
     console.log(this.favoriteSeason);
                               this.total=0;
-                           for(this.i=0;this.i<15;this.i++)
+                           for(this.i=0;this.i<18;this.i++)
                            {
 
                              console.log(this.answers[this.i]);
