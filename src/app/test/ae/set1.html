@@ -245,12 +245,77 @@
                                      
    </div>  
   
+     <div class="mydiv" *ngIf="qes==19">
+   <h1> 19. 
+  
+  സാധാരണയായി ഡോർ സ്വിച്ചിൻ്റെ  റേറ്റിംഗ്  എത്രയാണ്  ?</h1>
+  
+  <mat-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[18]">
+    <mat-radio-button class="example-radio-button" *ngFor="let season of seasons18" [value]="season">
+      {{season}}
+    </mat-radio-button>
+  </mat-radio-group>
+  <div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[18]}}</div>
+                                     
+   </div>  
+  
     
+     <div class="mydiv" *ngIf="qes==20">
+   <h1> 20. 
+  
+  പവർ സോക്കറ്റ്  ഓവർലോഡ്  ആകുന്നത് എന്തിനു കാരണമായേക്കാം   ?</h1>
+  
+  <mat-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[19]">
+    <mat-radio-button class="example-radio-button" *ngFor="let season of seasons19" [value]="season">
+      {{season}}
+    </mat-radio-button>
+  </mat-radio-group>
+  <div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[19]}}</div>
+                                     
+   </div>  
+    
+    
+      
+     <div class="mydiv" *ngIf="qes==21">
+   <h1> 21.  ഒരു ടേൺ ടേബിൾ മോട്ടോറിന്റെ  സ്പീഡ്  എത്രയാണ്   ?</h1>
+  
+  <mat-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[20]">
+    <mat-radio-button class="example-radio-button" *ngFor="let season of seasons20" [value]="season">
+      {{season}}
+    </mat-radio-button>
+  </mat-radio-group>
+  <div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[20]}}</div>
+                                     
+   </div>  
+    
+     <div class="mydiv" *ngIf="qes==22">
+   <h2> 22.  നിങ്ങൾ നിങ്ങളുടെ സഹപ്രവർത്തകനുമായി അഭിപ്രായവത്യാസത്തിലാണെന്നിരിക്കട്ടെ .  സർവീസിന്  അയാളുമൊത്തു പോകാൻ സൂപ്പർവൈസർ ആവശ്യപ്പെടുകയാണെങ്കിൽ  നിങ്ങൾ എന്ത് ചെയ്യും ?    ?</h2>
+  
+  <mat-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[21]">
+    <mat-radio-button class="example-radio-button" *ngFor="let season of seasons21" [value]="season">
+      {{season}}
+    </mat-radio-button>
+  </mat-radio-group>
+  <div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[21]}}</div>
+                                     
+   </div>  
+  
+        <div class="mydiv" *ngIf="qes==22">
+   <h2> 23.    വാട്ടർ ട്രീറ്റ്മെൻറ്  ചെയ്യുമ്പോൾ സെഡിമെന്റഷൻ  എപ്പോഴാണ് ചെയ്യുക.    ?</h2>
+  
+  <mat-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[22]">
+    <mat-radio-button class="example-radio-button" *ngFor="let season of seasons22" [value]="season">
+      {{season}}
+    </mat-radio-button>
+  </mat-radio-group>
+  <div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[22]}}</div>
+                                     
+   </div>  
   
   
   
   
-   <div class="mydiv" *ngIf="qes==19">
+   <div class="mydiv" *ngIf="qes==24">
    <h1> You have sucessfully Completed the Exam click SUBMIT to Submit the answers  </h1>
   
   
@@ -282,7 +347,7 @@
   
   <div class="bottom">
   <mat-card>
-   <span class="prev" *ngIf="qes>1 && qes < 19">
+   <span class="prev" *ngIf="qes>1 && qes < 24">
    <button mat-raised-button (click)="prev()"><< Previous </button>
      </span>  
    
@@ -290,7 +355,7 @@
     <button mat-raised-button (click)="res()"> SUBMIT EXAM </button>
     </span>  
   
-    <span class="next" *ngIf="qes<19">                               
+    <span class="next" *ngIf="qes<24">                               
    <button mat-raised-button (click)="next()">Next >></button>
     </span>
     
