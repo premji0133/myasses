@@ -14,7 +14,7 @@ import { SubmitComponent } from './sub_page';
 
 export class AeSet1Component implements OnInit {
  
-    
+    favoriteSeason: string[]=[];
   
    i :number;
   
