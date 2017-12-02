@@ -435,9 +435,19 @@
                                    
  </div> 
     
-    
+    <div class="mydiv" *ngIf="qes==34">
+ <h4> 34.  ഇത് തിരിച്ചറിയുക  ?    </h4>
+ <img src="assets/HDMI-cable.jpg" alt="HTML5 Icon" style="width:99%;height:170px;">
+<mat-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[33]">
+  <mat-radio-button class="example-radio-button" *ngFor="let season of seasons33" [value]="season">
+    {{season}}
+  </mat-radio-button>
+</mat-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[33]}}</div>
+                                   
+ </div> 
 
- <div class="mydiv" *ngIf="qes==34">
+ <div class="mydiv" *ngIf="qes==35">
    <h1> You have sucessfully Completed the Exam click SUBMIT   </h1>
   
   
@@ -456,11 +466,11 @@
   
 <div class="bottom">
 
- <span class="prev" *ngIf="qes>1 && qes < 34">
+ <span class="prev" *ngIf="qes>1 && qes < 35">
  <button mat-raised-button (click)="prev()"><< Previous </button>
    </span>  
 
-  <span class="next" *ngIf="qes<34">                               
+  <span class="next" *ngIf="qes<35">                               
  <button mat-raised-button (click)="next()">Next >></button>
   </span>
  <span class="submit">
