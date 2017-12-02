@@ -5,9 +5,9 @@ import {MatPaginator, MatTableDataSource} from '@angular/material';
  * @title Table with pagination
  */
 @Component({
-  selector: 'table-pagination-example',
-  styleUrls: ['table-pagination-example.css'],
-  templateUrl: 'table-pagination-example.html',
+  selector: 'table-marks',
+  styleUrls: ['markstable.css'],
+  templateUrl: 'markstable.html',
 })
 export class TablePaginationExample {
   displayedColumns = ['position', 'name', 'weight', 'symbol'];
