@@ -19,6 +19,10 @@ import { TablePaginationExample } from './table/markstable';
 import {CdkTableModule} from '@angular/cdk/table'
 import {OverlayModule} from '@angular/cdk/overlay';
 import 'hammerjs';
+import 'core-js/es6/reflect';
+import 'core-js/es7/reflect';
+import 'zone.js/dist/zone';
+import 'web-animations-js';
 
  
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'; 
