@@ -7,7 +7,7 @@ export class DataService
 {
    constructor(private http: Http) { }
   
-   getuserlist()  : Promise<marks[]> {
+   getmarks()  : Promise<marks[]> {
     
 
 
