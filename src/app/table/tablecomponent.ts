@@ -10,16 +10,25 @@ import { DataService } from '../services/data.service';
 })
 export class TableBasicExample implements OnInit{
   
-  
+  ki :  mark[] =[];
   
   displayedColumns = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<marks>(ELEMENT_DATA);
   
   constructor(private ds : DataService ) { }
-  ngOnInit()  {   }
   
-   ELEMENT_DATA1: Element[] = this.ds.getmarks();
-}
+  
+ getdata() : void{
+      this.ds.getmarks().then(parsedata=> this.ki = parsedata )
+      console.log('data==',this.ki);
+   }
+
+
+  ngOnInit()  { 
+    
+    this.getdata();
+
+    }
 
 
 export interface Element {
