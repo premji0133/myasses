@@ -13,7 +13,7 @@ export class TableBasicExample implements OnInit{
   
   
   displayedColumns = ['position', 'name', 'weight', 'symbol'];
-  dataSource = new MatTableDataSource<users>(ELEMENT_DATA);
+  dataSource = new MatTableDataSource<marks>(ELEMENT_DATA);
   
   constructor(private ds : DataService ) { }
   ngOnInit()  {   }
