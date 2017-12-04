@@ -14,7 +14,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {AuthenticationService} from'./services/login.service';
 import { SelectExam } from './test/sel_test';
 import { Set2Component } from './test/set2';
-import { TablePaginationExample } from './table/markstable';
+import { Tables } from './table/markstable';
 
 import {CdkTableModule} from '@angular/cdk/table'
 import {OverlayModule} from '@angular/cdk/overlay';
@@ -37,7 +37,7 @@ import {
 
 @NgModule({
   declarations: [
-    AppComponent,LoginComponent,DashComponent,Set1Component,AdduserComponent,TablePaginationExample,AeSet1Component,SubmitComponent,SelectExam,Set2Component
+    AppComponent,LoginComponent,DashComponent,Set1Component,AdduserComponent,Tables,AeSet1Component,SubmitComponent,SelectExam,Set2Component
   ],
        providers: [ AuthenticationService ],
   imports: [
