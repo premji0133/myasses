@@ -6,8 +6,8 @@ import {MatTableDataSource} from '@angular/material';
  */
 @Component({
   selector: 'table-basic-example',
-  styleUrls: ['table-basic-example.css'],
-  templateUrl: 'table-basic-example.html',
+  styleUrls: ['tablecomponent.css'],
+  templateUrl: 'tablecomponent.html',
 })
 export class TableBasicExample {
   displayedColumns = ['position', 'name', 'weight', 'symbol'];
