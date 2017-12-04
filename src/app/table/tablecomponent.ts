@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MatTableDataSource} from '@angular/material';
-import {users} from './services/mock';
-import { DataService } from './services/data.services';
+import {marks} from './services/mock';
+import { DataService } from './services/data.service';
 
 @Component({
   selector: 'table-basic-example',
@@ -18,7 +18,7 @@ export class TableBasicExample implements OnInit{
   constructor(private ds : DataService ) { }
   ngOnInit()  {   }
   
-  const ELEMENT_DATA1: Element[] = this.ds.getmarks();
+   ELEMENT_DATA1: Element[] = this.ds.getmarks();
 }
 
 
