@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MatTableDataSource} from '@angular/material';
 import {users} from './services/mock';
+import { DataService } from './services/data.services';
 
 @Component({
   selector: 'table-basic-example',
@@ -13,6 +14,11 @@ export class TableBasicExample implements OnInit{
   
   displayedColumns = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<users>(ELEMENT_DATA);
+  
+  constructor(private ds : DataService ) { }
+  ngOnInit()  {   }
+  
+  const ELEMENT_DATA1: Element[] = this.ds.getmarks();
 }
 
 
@@ -22,8 +28,7 @@ export interface Element {
   weight: number;
   symbol: string;
 }
-
-
+// const ELEMENT_DATA1: Element[] = this.ds.getmarks();
 
 
 const ELEMENT_DATA: Element[] = [
