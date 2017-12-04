@@ -7,32 +7,20 @@ export class DataService
 {
    constructor(private http: Http) { }
   
-   getuserlist()  : Promise<Parse[]> {
+   getuserlist()  : Promise<marks[]> {
     
 
 
-               return this.http.get('https://destiny.mod.bz/listusers')
+               return this.http.get('http://assespmkvy.herokuapp.com/api/public/list_mark')
                   .toPromise()
-                  .then(res => <Parse[]> res.json(), this.handleError)
+                  .then(res => <marks[]> res.json(), this.handleError)
                   .then(data => { console.log(data);  return data; }); 
 
 
    }
 
 
-   getdriverlist() : Promise<Driver[]> {
-    
-
-
-               return this.http.get('https://destiny.mod.bz/driverlist')
-                  .toPromise()
-                  .then(res => <Driver[]> res.json(), this.handleError)
-                  .then(data => { console.log(data); return data; }); 
-                  
-
-                                 
-   }
-   
+  
    
    
      private handleError(error: any): Promise<any> {
