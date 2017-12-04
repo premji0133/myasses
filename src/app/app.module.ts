@@ -12,6 +12,7 @@ import { SubmitComponent } from './test/ae/sub_page';
 import { AeSet1Component } from './test/ae/test1';
 import {ReactiveFormsModule} from "@angular/forms";
 import {AuthenticationService} from'./services/login.service';
+import {DataService} from'./services/data.service';
 import { SelectExam } from './test/sel_test';
 import { Set2Component } from './test/set2';
 import { Tables } from './table/markstable';
@@ -67,7 +68,7 @@ import {
   declarations: [
     AppComponent,LoginComponent,TableBasicExample,DashComponent,Set1Component,AdduserComponent,Tables,AeSet1Component,SubmitComponent,SelectExam,Set2Component
   ],
-       providers: [ AuthenticationService ],
+       providers: [ AuthenticationService,DataService ],
   imports: [
     BrowserModule,BrowserAnimationsModule,
    ReactiveFormsModule,
