@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MatTableDataSource} from '@angular/material';
-import {marks} from './services/mock';
-import { DataService } from './services/data.service';
+import {marks} from '../services/mock';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'table-basic-example',
