@@ -16,6 +16,7 @@ import { SelectExam } from './test/sel_test';
 import { Set2Component } from './test/set2';
 import { Tables } from './table/markstable';
 
+import { TableBasicExample } from './table/tablecomponent';
 import {CdkTableModule} from '@angular/cdk/table'
 import {OverlayModule} from '@angular/cdk/overlay';
 import 'hammerjs';
@@ -37,7 +38,7 @@ import {
 
 @NgModule({
   declarations: [
-    AppComponent,LoginComponent,DashComponent,Set1Component,AdduserComponent,Tables,AeSet1Component,SubmitComponent,SelectExam,Set2Component
+    AppComponent,LoginComponent,TableBasicExample,DashComponent,Set1Component,AdduserComponent,Tables,AeSet1Component,SubmitComponent,SelectExam,Set2Component
   ],
        providers: [ AuthenticationService ],
   imports: [
