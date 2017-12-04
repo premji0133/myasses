@@ -4,7 +4,7 @@ import { DashComponent } from './dash/dash';
 import { NgModule } from '@angular/core';
 import { Set1Component } from './test/set1';
 import { Set2Component }from './test/set2';
-import { TablePaginationExample }from './table/markstable';
+import { Tables }from './table/markstable';
 
 import { AdduserComponent } from './dash/adduser';
 import { AeSet1Component } from './test/ae/test1';
@@ -15,7 +15,7 @@ export const routes: Routes = [
     { path: '', component: LoginComponent},
     { path: 'login', component: LoginComponent },
     { path: 'dash', component: DashComponent },
-    { path: 'marks', component: TablePaginationExample },
+    { path: 'marks', component: Tables },
     { path: 'select-exam', component: SelectExam },
     {path: 'set1', component: Set1Component },
      {path: 'set2', component: Set2Component  },
