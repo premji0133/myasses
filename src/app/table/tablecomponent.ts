@@ -10,7 +10,7 @@ import { DataService } from '../services/data.service';
 })
 export class TableBasicExample implements OnInit{
   
-  ki :  mark[] =[];
+  ki :  marks[] =[];
   
   displayedColumns = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<marks>(ELEMENT_DATA);
@@ -30,14 +30,13 @@ export class TableBasicExample implements OnInit{
 
     }
 
-
+}
 export interface Element {
   name: string;
   position: number;
   weight: number;
   symbol: string;
 }
-// const ELEMENT_DATA1: Element[] = this.ds.getmarks();
 
 
 const ELEMENT_DATA: Element[] = [
