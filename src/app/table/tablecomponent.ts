@@ -42,8 +42,14 @@ export interface Element {
      MARK: number
 }
 
+export interface Elements {
+       users:Element[];
+}
 
-const ELEMENT_DATA: Element[] = [
-  {ID: 1, NAME: 'Hydrogen', TESTNUM: 1, MARK: 0}
+
+ ELEMENT_DATA:  = {"users":[{"ID":125,"NAME":"Prems021","TESTNUM":1,"MARK":1},
+                            {"ID":126,"NAME":"Prems021","TESTNUM":1,"MARK":4},
+                            {"ID":127,"NAME":"Prems021","TESTNUM":1,"MARK":4}]}
   
-];
+  
+
