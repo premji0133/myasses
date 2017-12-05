@@ -10,7 +10,7 @@ import { DataService } from '../services/data.service';
   templateUrl: 'tablecomponent.html',
 })
 export class TableBasicExample implements OnInit{
-  
+  views : boolean = 0;
   ki :  mark[] =[] ;
   pardata : mark[]= [new mark(0,'',1,0)];
   displayedColumns = ['ID', 'NAME', 'TESTNUM', 'MARK'];
@@ -24,7 +24,8 @@ export class TableBasicExample implements OnInit{
    }
   
   viewdata() : void{ 
-                           
+    
+                     this.views = 1;       
                      console.log('data==',this.pardata);
                       
                    }
