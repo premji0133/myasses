@@ -1,6 +1,6 @@
 
 
-export interface mark {
+export interface marks {
 
      ID: number,
      NAME: string,
@@ -9,3 +9,13 @@ export interface mark {
     
        
   }
+export class mark {
+  constructor(
+    
+    public ID: number,
+    public NAME: string,
+    public TESTNUM: number,
+     public MARK: number
+    
+  ) {  }
+}
