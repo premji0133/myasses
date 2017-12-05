@@ -36,7 +36,7 @@ publicRouter.get('/list_mark', (request: Request, response: Response) => {
   attributes: ['ID','NAME','TESTNUM','MARK']
 }).
 then(users => {
-  res.send(users);
+  response.send(users);
  
 });
 });
