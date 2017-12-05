@@ -13,7 +13,7 @@ export class TableBasicExample implements OnInit{
   views : number = 0;
   ki :  mark[] =[] ;
   pardata : mark[]= [new mark(0,'',1,0)];
-  displayedColumns = ['ID', 'NAME', 'TESTNUM', 'MARK'];
+  displayedColumns = ['NAME', 'TESTNUM', 'MARK'];
   dataSource = new MatTableDataSource<mark>(this.getval());
   constructor(private ds : DataService ) { }
   
