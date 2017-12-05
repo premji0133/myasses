@@ -9,6 +9,10 @@ export class marks {
   ) {  }
 }
 
+export interface markk {
+  users: marks[];
+}
+
 export interface mark {
 
      ID: number,
