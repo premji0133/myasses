@@ -13,8 +13,8 @@ export class TableBasicExample implements OnInit{
   
   ki :  mark[] =[] ;
   pardata : mark[]= [new mark(0,'',1,0)];
-  
-  
+  displayedColumns = ['ID', 'NAME', 'TESTNUM', 'MARK'];
+  dataSource = new MatTableDataSource<mark>(this.getval());
   constructor(private ds : DataService ) { }
   
   
@@ -28,7 +28,10 @@ export class TableBasicExample implements OnInit{
                      console.log('data==',this.pardata);
                       
                    }
-
+getval() 
+  {
+   return this.pardata; 
+  }
 
 
   ngOnInit()  { 
