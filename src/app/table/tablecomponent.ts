@@ -12,7 +12,7 @@ import { DataService } from '../services/data.service';
 export class TableBasicExample implements OnInit{
   
   ki :  mark[] =[] ;
-  
+  pardata : mark[]= [new mark(0,'',1,0)];
   displayedColumns = ['ID', 'NAME', 'TESTNUM', 'MARK'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
   
@@ -20,13 +20,13 @@ export class TableBasicExample implements OnInit{
   
   
  getdata() : void{
-      this.ds.getmarks().then(parsedata=> this.ki = parsedata )
-      console.log('data==',this.ki);
+      this.ds.getmarks().then(parsedata=> this.pardata = parsedata )
+      console.log('data==',this.pardata);
    }
   
   viewdata() : void{ 
                            
-                     console.log('data==',this.ki);
+                     console.log('data==',this.pardata);
                       
                    }
 
