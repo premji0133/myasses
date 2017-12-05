@@ -28,7 +28,7 @@ export class TableBasicExample implements OnInit{
                      this.views = 1;    
     
                      console.log('data==',this.pardata);
-                     this.dataSource = MatTableDataSource<mark>(this.pardata);
+                     this.dataSource = <mark>(this.pardata);
                       
                    }
 getval() 
