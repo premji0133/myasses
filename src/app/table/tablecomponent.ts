@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {MatTableDataSource} from '@angular/material';
-import {marks} from '../services/mock';
-import {markk} from '../services/mock';
+import {mark} from '../services/mock';
+
 import { DataService } from '../services/data.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { DataService } from '../services/data.service';
 })
 export class TableBasicExample implements OnInit{
   
-  ki :  markk ;
+  ki :  mark ;
   
   displayedColumns = ['ID', 'NAME', 'TESTNUM', 'MARK'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
