@@ -10,7 +10,7 @@ export class marks {
 }
 
 export interface markk {
-  users: marks[];
+  users: mark[];
 }
 
 export interface mark {
