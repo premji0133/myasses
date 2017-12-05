@@ -23,14 +23,10 @@ export class TableBasicExample implements OnInit{
       this.ds.getmarks().then(parsedata=> this.ki = parsedata )
       console.log('data==',this.ki);
    }
-  view() : void{
-   this.dataSource = this.ki; 
-  }
+
 
   ngOnInit()  { 
-    
-    this.getdata();
-    this.view();
+ 
 
     }
 
@@ -42,14 +38,12 @@ export interface Element {
      MARK: number
 }
 
-export interface Elements {
-       users:Element[];
-}
 
 
- ELEMENT_DATA:  = [{"users":[{"ID":125,"NAME":"Prems021","TESTNUM":1,"MARK":1},
+
+ ELEMENT_DATA:  = [{"ID":125,"NAME":"Prems021","TESTNUM":1,"MARK":1},
                             {"ID":126,"NAME":"Prems021","TESTNUM":1,"MARK":4},
-                            {"ID":127,"NAME":"Prems021","TESTNUM":1,"MARK":4}]}];
+                            {"ID":127,"NAME":"Prems021","TESTNUM":1,"MARK":4}];
   
   
 
