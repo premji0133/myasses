@@ -23,27 +23,27 @@ export class TableBasicExample implements OnInit{
       this.ds.getmarks().then(parsedata=> this.ki = parsedata )
       console.log('data==',this.ki);
    }
-
+  view() : void{
+   this.dataSource = this.ki; 
+  }
 
   ngOnInit()  { 
     
     this.getdata();
+    this.view();
 
     }
 
 }
 export interface Element {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+       ID: number,
+      NAME: string,
+     TESTNUM: number,
+     MARK: number
 }
 
 
 const ELEMENT_DATA: Element[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-   {position: 20, name: 'Calcium', weight: 40.078, symbol: 'Ca'},
+  {ID: 1, NAME: 'Hydrogen', TESTNUM: 1, MARK: 0}
+  
 ];
