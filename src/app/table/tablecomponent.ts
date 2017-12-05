@@ -14,7 +14,7 @@ export class TableBasicExample implements OnInit{
   ki :  mark[] =[] ;
   pardata : mark[]= [new mark(0,'',1,0)];
   displayedColumns = ['NAME', 'TESTNUM', 'MARK'];
-  dataSource : new MatTableDataSource<mark>();
+  dataSource = new MatTableDataSource<mark>(this.getval());
   constructor(private ds : DataService ) { }
   
   
@@ -24,13 +24,14 @@ export class TableBasicExample implements OnInit{
    }
   
   viewdata() : void{ 
-                       dataSource =  MatTableDataSource<mark>(this.getval());
+                      
                      this.views = 1;       
                      console.log('data==',this.pardata);
                       
                    }
 getval() 
   {
+    this.getdata(); 
    return this.pardata; 
   }
 
