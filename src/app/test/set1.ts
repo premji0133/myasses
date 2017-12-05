@@ -23,7 +23,7 @@ export class Set1Component implements OnInit {
             'പുതിയ ഉല്പന്നം പരിചയപ്പെടുത്താന്‍','പ്രോഡക്റ്റ് മാന്വൽ','സിസ്റ്റത്തിലേക്കു പുതിയ ഗ്രാഫിക്സ് കാർഡ്  ചേർക്കും',
              'ഫോൺ കോളിന്റെ ദൈർഘ്യ൦','ഇവയെല്ലാം','സർവീസിനെ സംമ്മന്ധിച്ചുള്ള വിവരങ്ങൾ വെളിപ്പെടുത്താതിരിക്കുന്നതു',
             'ഡാറ്റാ ലിങ്ക്  ലയർ','അറ്റുനേഷൻ','സെഷൻ ലയർ','32','ക്ലാസ് B','127.0.0.1','ക്യാറ്റഗറി 1  കേബിൾ','ഇവയെല്ലാം',
-             'പേജ് പ്രിൻറർ','ഹാർഡ് കോപ്പി','ഫയർവാൾ','DRAM',];
+             'പേജ് പ്രിൻറർ','ഹാർഡ് കോപ്പി','ഫയർവാൾ','DRAM','നെറ്റ്‌വർക്ക് ലയർ','HDMI','VGA','USB 3.0 & USB A/B'];
    favoriteSeason: string[]=[];
   qes: number ;
      total : number = 0;
@@ -102,9 +102,9 @@ export class Set1Component implements OnInit {
      seasons30 = ['ഓപ്പറേറ്റിംഗ് സിസ്റ്റം','ആന്റി വൈറസ്','ഫയർവാൾ','ഇതൊന്നും അല്ല'];
     seasons31 = ['SRAM','DRAM','ROM','ഇവയെല്ലാം'];
     seasons32 = ['ഫിസിക്കൽ  ലയർ','നെറ്റ്‌വർക്ക് ലയർ','ട്രാൻസ്‌പോർട്ട് ലയർ','ആപ്ലിക്കേഷൻ ലയർ'];
-    
-  
-  
+     seasons33 = ['HDMI','VGA','DVI','None Of these '];
+     seasons34 = ['HDMI','VGA','DVI','None Of these '];
+  seasons35 = ['USB 3.0 & USB A/B','USB 2.0 & USB A/B','USB 2.0 & USB Micro','None Of these '];
   constructor( private router: Router,  private As: AuthenticationService) {   }
   ngOnInit()  {
    let timer = Observable.timer(2000,1000);
@@ -116,7 +116,7 @@ export class Set1Component implements OnInit {
   func(c:any)
   {
     this.ticks = c;
-    if (this.ticks == 720)
+    if (this.ticks == 1500)
     {
       this.res();
     }
@@ -139,7 +139,7 @@ export class Set1Component implements OnInit {
   {
      console.log(this.favoriteSeason);
                               this.total=0;
-                           for(this.i=0;this.i<20;this.i++)
+                           for(this.i=0;this.i<36;this.i++)
                            {
 
                              console.log(this.answers[this.i]);
