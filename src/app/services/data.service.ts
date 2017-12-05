@@ -2,18 +2,19 @@ import { Injectable }    from '@angular/core';
 import { Headers, Http, Response, RequestOptionsArgs } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import { marks } from './mock';
+import { markk } from './mock';
 @Injectable()
 export class DataService 
 {
    constructor(private http: Http) { }
   
-   getmarks()  : Promise<marks[]> {
+   getmarks()  : Promise<markk> {
     
 
 
                return this.http.get('https://assespmkvy.herokuapp.com/api/public/list_mark')
                   .toPromise()
-                  .then(res => <marks[]> res.json(), this.handleError)
+                  .then(res => <markk> res.json(), this.handleError)
                   .then(data => { console.log(data);  return data; }); 
 
 
