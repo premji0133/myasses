@@ -11,7 +11,7 @@ import { DataService } from '../services/data.service';
 })
 export class TableBasicExample implements OnInit{
   
-  ki :  mark ;
+  ki :  mark[] =[] ;
   
   displayedColumns = ['ID', 'NAME', 'TESTNUM', 'MARK'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
