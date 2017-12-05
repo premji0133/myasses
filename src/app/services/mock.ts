@@ -1,17 +1,4 @@
-export class marks {
-  constructor(
-    public ID:number,
-    public NAME: string,
-    public TESTNUM: number,
-    public MARK: number
-    
-       
-  ) {  }
-}
 
-export interface markk {
-  users: mark[];
-}
 
 export interface mark {
 
@@ -21,5 +8,4 @@ export interface mark {
      MARK: number
     
        
-  
-}
+  }
