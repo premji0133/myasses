@@ -13,7 +13,7 @@ export class TableBasicExample implements OnInit{
   
   ki :  markk ;
   
-  displayedColumns = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns = ['ID', 'NAME', 'TESTNUM', 'MARK'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
   
   constructor(private ds : DataService ) { }
