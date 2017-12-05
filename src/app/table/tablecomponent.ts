@@ -40,10 +40,10 @@ export interface Element {
 
 
 
+const ELEMENT_DATA: Element[] = [{"ID":126,"NAME":"Prems021","TESTNUM":1,"MARK":4},
+  {"ID":125,"NAME":"Prems021","TESTNUM":1,"MARK":1}];
 
- ELEMENT_DATA:  = [{"ID":125,"NAME":"Prems021","TESTNUM":1,"MARK":1},
-                            {"ID":126,"NAME":"Prems021","TESTNUM":1,"MARK":4},
-                            {"ID":127,"NAME":"Prems021","TESTNUM":1,"MARK":4}];
+
   
   
 
