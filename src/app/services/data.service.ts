@@ -15,7 +15,7 @@ export class DataService
                return this.http.get('https://assespmkvy.herokuapp.com/api/public/list_mark')
                   .toPromise()
                   .then(res => <markk> res.json(), this.handleError)
-                  .then(data => { console.log(data);  return data; }); 
+                  .then(data => {  return data; }); 
 
 
    }
