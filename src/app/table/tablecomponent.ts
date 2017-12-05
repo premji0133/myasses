@@ -47,9 +47,9 @@ export interface Elements {
 }
 
 
- ELEMENT_DATA:  = {"users":[{"ID":125,"NAME":"Prems021","TESTNUM":1,"MARK":1},
+ ELEMENT_DATA:  = [{"users":[{"ID":125,"NAME":"Prems021","TESTNUM":1,"MARK":1},
                             {"ID":126,"NAME":"Prems021","TESTNUM":1,"MARK":4},
-                            {"ID":127,"NAME":"Prems021","TESTNUM":1,"MARK":4}]};
+                            {"ID":127,"NAME":"Prems021","TESTNUM":1,"MARK":4}]}];
   
   
 
