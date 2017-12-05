@@ -23,19 +23,26 @@ export class TableBasicExample implements OnInit{
       this.ds.getmarks().then(parsedata=> this.ki = parsedata )
       console.log('data==',this.ki);
    }
+  
+  viewdata() : void{ 
+                           
+                     console.log('data==',this.ki);
+                      
+                   }
+
 
 
   ngOnInit()  { 
- 
-
-    }
+                 this.getdata();        
+                 this.viewdata();
+              }
 
 }
 export interface Element {
        ID: number,
-      NAME: string,
-     TESTNUM: number,
-     MARK: number
+       NAME: string,
+       TESTNUM: number,
+       MARK: number
 }
 
 
