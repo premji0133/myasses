@@ -14,14 +14,14 @@ export const routes: Routes = [
     { path:'', redirectTo: '/login', pathMatch: 'full' },
     { path: '', component: LoginComponent},
     { path: 'login', component: LoginComponent },
-    { path: 'dash', component: DashComponent, , canActivate: [AuthGuard] },
+    { path: 'dash', component: DashComponent, canActivate: [AuthGuard] },
     { path: 'marks', component: Tables },
-    { path: 'select-exam', component: SelectExam, canActivate: [AuthGuard] },
-    {path: 'set1', component: Set1Component,canActivate: [AuthGuard]   },
-     {path: 'set2', component: Set2Component, canActivate: [AuthGuard]   },
+    { path: 'select-exam', component: SelectExam, canActivate: [AuthGuard]},
+    {path: 'set1', component: Set1Component,canActivate: [AuthGuard]},
+     {path: 'set2', component: Set2Component, canActivate: [AuthGuard]},
     {path: 'add-user',component: AdduserComponent },
-     {path: 'aetest1',component: AeSet1Component, canActivate: [AuthGuard]  },
-     {path: 'end',component: SubmitComponent, canActivate: [AuthGuard]  },
+     {path: 'aetest1',component: AeSet1Component, canActivate: [AuthGuard]},
+     {path: 'end',component: SubmitComponent, canActivate: [AuthGuard]},
  
    
   
