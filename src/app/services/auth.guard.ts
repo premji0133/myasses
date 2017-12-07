@@ -3,11 +3,11 @@ import { Router, CanActivate } from '@angular/router';
 
 @Injectable()
 export class AuthGuard implements CanActivate {
-
+     public token : boolean = false;
     constructor(private router: Router) { }
 
     canActivate() {
-        if (localStorage.getItem('currentUser')) {
+        if (this.token == true) {
             // logged in so return true
             return true;
         }
