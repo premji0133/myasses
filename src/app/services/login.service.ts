@@ -8,7 +8,7 @@ import 'rxjs/add/operator/map'
 @Injectable()
 export class AuthenticationService {
 
-    public token: boolean=false;
+   
     names: string;
     total = 0;
     constructor(private http: Http) { }
@@ -26,7 +26,7 @@ export class AuthenticationService {
                 {
                     let postr = response.json();
                    console.log('responce=',postr)
-                  this.token=true;
+                
                     
                 }
             })   .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
