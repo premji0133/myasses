@@ -8,7 +8,7 @@ import { AuthGuard } from '../services/auth.guard';
   styleUrls: ['./dash.css']
 })
 export class DashComponent implements OnInit {
-  constructor( private router: Router private ag: AuthGuard) {   }
+  constructor( private router: Router ,private ag: AuthGuard) {   }
   ngOnInit()  {}
  login() { }
   logout()
