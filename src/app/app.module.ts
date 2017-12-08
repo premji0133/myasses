@@ -18,7 +18,7 @@ import { Set2Component } from './test/set2';
 import { Tables } from './table/markstable';
 import {CdkTableModule} from '@angular/cdk/table';
 import { TableBasicExample } from './table/tablecomponent';
-import { AuthGuard} from './services/auth.guard';
+import { AuthGuard } from './services/auth.guard';
 
 import {OverlayModule} from '@angular/cdk/overlay';
 import 'hammerjs';
