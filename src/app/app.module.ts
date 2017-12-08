@@ -18,6 +18,7 @@ import { Set2Component } from './test/set2';
 import { Tables } from './table/markstable';
 import {CdkTableModule} from '@angular/cdk/table';
 import { TableBasicExample } from './table/tablecomponent';
+import { AuthGuard} from './services/auth.guard';
 
 import {OverlayModule} from '@angular/cdk/overlay';
 import 'hammerjs';
@@ -68,7 +69,7 @@ import {
   declarations: [
     AppComponent,LoginComponent,TableBasicExample,DashComponent,Set1Component,AdduserComponent,Tables,AeSet1Component,SubmitComponent,SelectExam,Set2Component
   ],
-       providers: [ AuthenticationService,DataService ],
+       providers: [ AuthenticationService,DataService,AuthGuard ],
   imports: [
     BrowserModule,BrowserAnimationsModule,
    ReactiveFormsModule,
